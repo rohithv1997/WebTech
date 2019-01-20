@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <title>Incredible Nature</title>
+        <link rel="stylesheet" type="text/css" href="Style.css"/>
+    </head>
+    <body onload="Loaded();">
+        <table id="Main_Grid">
+            <tr>
+                <!--Title-->
+                <td colspan="2" style="width:30%; height:10%">
+                    <table>
+                        <tr>
+                            <td rowspan="2">
+                                <button style="margin-right:5px;" class="Menu_Button" id="Nav_Button" onClick="OpenNavBar()"/>
+                            </td>
+                            <td>
+                                <p class="Head_Text">
+                                    INCREDIBLE NATURE
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="Head_Text">
+                                    PHOTOGRAPHY
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <!--Menu-->
+                <td colspan="2">
+                    <table id="Menu">
+                        <tr>
+                            <td class="Menu_Item">
+                                <button id="Menu_Button_1" onclick="HomeClick()" class="Menu_Button">HOME</button>
+                            </td>
+                            <td class="Menu_Item">
+                                <button id="Menu_Button_2" onclick="GalleryClick()" class="Menu_Button">GALLERY</button>
+                            </td>
+                            <td class="Menu_Item">
+                                <button id="Menu_Button_3" onclick="AboutClick()" class="Menu_Button">ABOUT</button>
+                            </td>
+                            <td class="Menu_Item">
+                                <button id="Menu_Button_4" onclick="FeedbackClick()" class="Menu_Button">FEEDBACK</button>
+                            </td>
+                    </table>
+                </td>
+            </tr>
+            <!--Menu Bottom Line-->
+            <!--<tr style="height:2px;">
+                <td colspan="2"/>
+                <td colspan="2">
+                    <hr noshade="noshade" id="Menu_Line"/>
+                </td>
+            </tr>-->
+            <tr>
+                <!--NavBar-->
+                <td style="width:15%;">
+                    <div id="Nav_Bar">
+                        <ul style="list-style: none;">
+                            <li>
+                                <button id="Nav_Button_1" onmouseout="NavMouseOver('null')"  onmouseover="NavMouseOver('Nav_Button_1')" onclick="HomeClick()" style="height:10%;" class="Menu_Button">HOME</button>
+                            </li>
+                            <li>
+                                <button id="Nav_Button_2" onmouseout="NavMouseOver('null')" onmouseover="NavMouseOver('Nav_Button_2')" onclick="GalleryClick()" style="height:10%;" class="Menu_Button">GALLERY</button>
+                            </li>
+                            <li>
+                                <button id="Nav_Button_3" onmouseout="NavMouseOver('null')"  onmouseover="NavMouseOver('Nav_Button_3')" onclick="AboutClick()" style="height:10%;" class="Menu_Button">ABOUT</button>
+                            </li>
+                            <li>
+                                <button id="Nav_Button_4" onmouseout="NavMouseOver('null')"  onmouseover="NavMouseOver('Nav_Button_4')" onclick="FeedbackClick()" style="height:10%;" class="Menu_Button">FEEDBACK</button>
+                            </li>
+                        </ul>
+                    </div>
+                </td>
+                <!--Content Main-->
+                <td colspan="2">
+                    <iframe id="Main_Content"></iframe>
+                </td>
+                <!--Misc-->
+                <td style="width:15%;"/>
+            </tr>
+            <!--Bottom-->
+            <tr>
+                <td style="height:8%;"/>
+                <td colspan="2">
+                    <div style="text-align:right;">
+                        <button class="Menu_Button" id="Social_Button" 
+                                onclick="openInNewTab('https://www.facebook.com/natgeo');" 
+                                style="background-image: url('Images/facebook.png');"/>
+                        <button class="Menu_Button" id="Social_Button" 
+                                onclick="openInNewTab('https://www.instagram.com/natgeo/');"
+                                style="background-image: url('Images/instagram.png');"/>
+                        <button class="Menu_Button" id="Social_Button"
+                                onclick="openInNewTab('https://twitter.com/NatGeo');"
+                                style="background-image: url('Images/twitter.png');"/>
+                    </div>
+                </td>
+            </tr>
+        </table>        
+        <script src="Script.js">
+        </script>
+    </body>
+</html>

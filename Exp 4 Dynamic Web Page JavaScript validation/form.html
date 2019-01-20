@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<head> <title> Form Validation </title> </head>
+
+
+
+<body style = "background-color: purple;">
+
+<script type="text/javascript">
+	
+	function validation(f){
+		if(f.name.value.length == 0)
+			alert("Invalid Name");
+
+		else if(f.reg.value.length != 15)
+			alert("Invalid Registration Number");
+
+		else if(f.cgpa.value < 0 || f.cgpa.value > 10 || f.cgpa.value == "")
+			alert("Cgpa must be between 1 and 10");
+
+		else
+			alert("Successful");
+
+	}
+
+</script>
+	<div  class = "input" style="width: 300px; height: 200px; background-color: white;text-align: center; padding-top: 50px;  margin-left: 450px; margin-top: 100px;">
+		<form name="f">
+			<input type="text" id="01" placeholder="Name" name="name"><br><br>
+			<input type="text" placeholder="Registration Number" name="reg"><br><br>
+			<input type="number" placeholder="CGPA" name="cgpa"><br><br>
+			<input type="button" value="submit" onclick="validation(f)">
+		</form>
+	</div>
+
+	
+	
+</body>
+
+</html>

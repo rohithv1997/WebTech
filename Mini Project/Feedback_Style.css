@@ -1,0 +1,40 @@
+#Feedback_Form
+{
+    color: white;
+    margin-top: 17%;
+}
+tr
+{
+    border-spacing: 10px;
+}
+td
+{
+    padding-left: 10px;
+}
+label.IN
+{
+    font-style: italic;
+    font-size: 20px;
+    color: white;
+}
+.Submit_Button {
+    margin-top: 2%;
+    width:100px;
+    height: 40px;
+    outline-style: none;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    background-color: rgba(25, 25, 25, 0.35);
+    color: white;
+    border: 0px solid #4CAF50;
+    border-radius: 3px;
+}
+
+.Submit_Button:hover {
+    background-color: rgba(25, 25, 25, 0.50);
+}
+.Submit_Button:active
+{
+    background-color: rgba(25, 25, 25, 0.6);
+}

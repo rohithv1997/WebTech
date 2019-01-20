@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+	<style type="text/css">
+		input
+		{
+			border: 0px;
+			border-bottom: 1.5px solid blue;
+		}
+		input:focus
+		{
+			border: 0px;
+			border-bottom: 1.5px solid red;
+			outline:none;
+		}
+	</style>
+	<script type="text/javascript">
+		function check() {
+			var f=document.getElementById("fname").value;
+			var l=document.getElementById("lname").value;
+			var p=document.getElementById("phone").value;
+			if(f==null||f=="")
+			{
+				alert("First Name Empty");
+			}
+			if(l==null||l=="")
+			{
+				alert("Last Name Empty");
+			}
+			if(p==null||p==""||p<1000000000||p>9999999999)
+			{
+				alert("Invalid Phone Number");
+			}
+		}
+	</script>
+</head>
+<body style="font-size: 25px;background-color: #047BD5;">
+<div align="center" height="40%" width="200px" style="display:inline-block;margin-top:15%;background-color: white;position: relative;z-index: 2;margin-left:30%;padding:5%;">
+	<input type="text" id="fname" placeholder="First Name" size="30" style="font-size: 20px">
+	<br>
+	<br>
+	<input type="text" id="lname" placeholder="Last Name" size="30" style="font-size: 20px">
+	<br>
+	<br>
+	<input type="number" id="phone" placeholder="Phone Number" size="30" style="font-size: 20px">
+	<br>
+	<br>
+	<button onclick="check()">Submit</button>
+</div>
+</body>
+</html>

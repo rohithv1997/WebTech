@@ -1,0 +1,20 @@
+#Logo
+{
+    margin-top: 5%;
+    width: 30%;
+    height: auto;
+}
+#Text
+{
+    font-size: 22px;
+    text-align: center;
+    color: white;
+    font-style: italic;
+}
+#Author
+{
+    margin-top: 5%;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+}
